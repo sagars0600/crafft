@@ -1,0 +1,1071 @@
+html{
+  scroll-behavior: smooth;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 50px; /* Place the button at the bottom of the page */
+ left: 3rem; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(218, 193, 160); /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 6px; /* Some padding */
+  border-radius: 0; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  background-color: burlywood;
+  color: white;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 120px;
+  right: 40px;
+  display: none;
+}
+
+.cart-icon{
+  position: absolute;
+  float: left;
+  font-size: 22px;
+  margin-left: 111rem;
+  margin-top: 0.5rem;
+}
+
+@media  screen and (max-width:1024px){
+  .cart-icon{
+    margin-left: 93rem;
+  }
+}
+@media  screen and (max-width:768px){
+  .cart-icon{
+    margin-left: 68rem;
+  }
+}
+@media only screen and (max-width:541px){
+  .cart-icon{
+    margin-left: 41rem;
+  }
+}
+
+@media  screen and (max-width:416px){
+  .cart-icon{
+    margin-left: 33rem;
+  }
+}
+
+@media only screen and (max-width:378px){
+  .cart-icon{
+    margin-left: 28.5rem;
+  }
+}
+@media  screen and (max-width:360px){
+  .cart-icon{
+    margin-left: 27rem;
+  }
+}
+
+@media  screen and (max-width:320px){
+  .cart-icon{
+    margin-left: 24rem;
+  }
+}
+
+
+
+.cart-icon:hover{
+  color: chocolate;
+}
+
+
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px 33px;
+  background:white;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 102;
+}
+
+.header .logo {
+  color:black;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+}
+@media screen and (max-width:768px){
+  .header .logo{
+    position: relative;
+    left: 42%;
+  }
+}
+
+@media screen and (max-width:375px){
+  .header .logo{
+    position: relative;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width:360px){
+  .header .logo{
+    position: relative;
+    left: 39%;
+  }
+}
+
+
+.dropdown-submenu {
+ 
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  font-family: fontAwesome;
+  content: '\f0da';
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+.header nav {
+  float: right;
+  
+}
+
+.header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header nav ul li {
+  
+  list-style: none;
+  position: relative;
+}
+
+.header nav ul li.sub-menu:before {
+  content: '\f0d7';
+  font-family: fontAwesome;
+  position: absolute;
+  line-height: 50px;
+  color: black;
+  right: 5px;
+  transition: all .5s;
+}
+
+.header nav ul li.active.sub-menu:before {
+    content: '\f0d8';
+}
+
+.header nav ul li.sub-menu-menu:before {
+  content: '\f0da';
+  font-family: fontAwesome;
+  position: absolute;
+  line-height: 50px;
+  color: black;
+  right: 5px;
+  transition: all .5s;
+}
+
+.header nav ul li.active.sub-menu-menu:before {
+  content: '\f0d9';
+}
+.menu{
+
+}
+.header nav ul li ul {
+  
+  position: absolute;
+  left: 0;
+  background: white;
+  display: none;
+}
+
+.header nav ul li.active ul {
+  
+  display: block;
+}
+.header nav ul li ul li {
+  
+  display: block;
+  width: 200px;
+}
+
+.header nav ul li a {
+  font-family: 'Oregon LDO';
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 20px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  
+  
+}
+
+.header nav ul li a:hover,
+.header nav ul li a.active {
+  
+ 
+  
+}
+
+.menu-toggle {
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+}
+
+@media (max-width: 991px)  {
+  
+  .header {
+    padding: 10px 20px;
+  }
+  
+  .menu-toggle {
+    
+    display: block;
+  }
+  
+  .header nav {
+    
+    position: absolute;
+    width: 50%;
+    height: calc(100vh - 50px);
+    background: white;
+    top: 50px;
+    left: -100%;
+    transition: all 0.5s;  
+  }
+  
+  .header nav.active {
+    
+    left: 0;
+  } 
+  
+  .header nav ul {
+    display: block;
+    text-align: center;    
+  }
+  
+  .header nav ul li a {
+    
+   
+  }
+  
+  .header nav ul li.active ul {
+    
+      position: relative;
+      background: white;
+  }
+  
+  .header nav ul li ul li {
+    
+    width: 100%;
+  }
+}
+.show-menu:hover{
+  background-color: black;
+}
+.sub-menu:hover .sub-menu{
+  display: block;
+}
+.lock-scroll {
+  overflow: hidden;
+}
+
+.heading-01{
+  font-size: 22px;
+  font-family: 'Oregon LDO';
+  color: black;
+  text-align: center;
+}
+.heading-5{
+  margin-top: 9rem;
+  font-family: 'Oregon LDO';
+  color:black;
+
+  text-align: center;
+}
+
+@media screen and (min-width:375px){
+  .heading-5{
+    margin-top: 10.5rem;
+  }
+}
+
+
+.img-first{
+  width: 9%;
+  position: relative;
+  float: left;
+  margin-left: -24rem;
+  margin-bottom: -6rem;
+}
+@media screen and (max-width:1024px){
+  .img-first{
+    margin-left: -12rem;
+  }
+}
+
+@media screen and (max-width:768px){
+  .img-first{
+    top: 1rem;
+    
+  }
+}
+.navbar{
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  height: 60px;
+
+  color: #fff;
+  background-color: white; 
+  position: fixed;  
+}
+
+.main-nav{
+  float: right;
+  display: inline-block;
+  padding-right: 15px
+/*    position: relative;*/
+}
+
+.main {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 9px 7px;
+  font-size: 19px;
+  transition: 0.3s;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  padding-bottom: 19px
+}
+
+.main:last-child{
+  padding-right: 24px;
+}
+
+.main:hover{
+ color: grey; 
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+cursor: pointer;
+}
+
+.main-dropdown{
+  margin-bottom: 10px;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+width: 200px;
+z-index: 1;
+  left: 0;
+}
+
+.dropdown-content a {
+color: black;
+  border-bottom: 1px solid black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+  font-size: 14px;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.i-up{
+  display: none;
+}
+
+.show-menu-btn,.hide-menu-btn{
+  font-size: 17px;
+  transition: 0.4s;
+  cursor: pointer;
+  display: none;
+}
+
+.show-menu-btn{
+  float: right;
+  position: absolute;
+  top: 6px;
+  right: 30px;
+}
+
+.show-menu-btn:hover, 
+.hide-menu-btn:hover,
+.menu a:hover{
+  /* color: #000000; */
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+@media screen and (max-width:920px){
+  
+  .show-menu-btn, .hide-menu-btn {
+      display: block;
+      color: black;
+      font-size: 30px;
+      line-height: 44px;
+  }
+  
+  .show-menu-btn:hover, 
+  .hide-menu-btn:hover{
+/*        color: blueviolet;*/
+  }
+  
+  .main-nav {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgb(237, 184, 9);
+      right: -100%;
+      top: 0;
+      text-align: center;
+      padding: 100px 0;
+      transition: 0.7s;
+      line-height: normal;
+      list-style: none;
+      z-index: 999; 
+  }
+  
+  .main-nav a{
+      font-size: 20px;
+      color: white;
+      display: block;
+      overflow: hidden;
+  }
+  
+  .hide-menu-btn{
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+  }
+  
+  #chk:checked ~ .main-nav{
+      right: 0;
+  }  
+  
+  .dropdown{
+      display: block;
+      padding-bottom: 0px;
+  }
+  
+  .dropdown:hover .i-down {
+      display: none;
+  }
+  
+  .dropdown:hover .i-up {
+      display: inline;
+  }
+  
+  .main-dropdown{
+  margin-bottom: 0px;
+  }
+  
+  .dropdown-content {
+    background-color: rgb(237, 184, 9);
+    z-index: 1;
+    width: 100%;
+      position: relative;
+  }
+
+  .dropdown-content a{
+    color: white;
+    border-bottom: 0;
+    padding: 2px 6px;
+    font-size: 18px;
+      width: 100%;
+}   
+  
+  .dropdown-content a:hover{
+      color: gray;
+  }
+}
+
+.container {
+ 
+  margin: auto;
+  background: #fff;
+}
+
+/* mak images fill their container*/
+img {
+  max-width: 100%;
+}
+img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* CSS Grid*/
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5px;
+}
+
+
+
+/* Media Query for changing grid on bigger screens*/
+
+/* Bigger than Phones(tablet) */
+@media only screen and (min-width: 750px) {
+  .img-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Bigger than Phones(laptop / desktop) */
+@media only screen and (min-width: 970px) {
+  .img-grid {
+    text-align: center;
+    
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.fig1-cap{
+  font-family: 'Oregon LDO';
+  text-align: center;
+  font-size: 22px;
+  color: grey;
+  
+}
+.fig11-cap{
+  font-family: 'Oregon LDO';
+  text-align: center;
+  font-size: 22px;
+  color: crimson;
+ 
+}
+
+@media only screen and (min-width:1025px){
+  .fig11-cap{
+    margin-top: -1rem;
+  }
+  .fig1-cap{
+    margin-top: -1rem;
+  }
+}
+
+.img-s{
+  text-align: center;
+  justify-content: center;
+  width: 12.1rem;
+  
+}
+@media only screen and (min-width:411px){
+  .img-s{
+    width: 13.2rem;
+  }
+  }
+ 
+
+@media only screen and (max-width:360px){
+  .img-s{
+        width: 11.6rem;
+      }
+      }
+  
+@media only screen and (max-width:320px){
+.img-s{
+  width: 9.9rem;
+}
+}
+
+/* @media screen and (max-width:375px){
+  .img-s{
+    width: 12.1rem;
+  }
+  } */
+.fig1-cap:hover{
+  color: #000000;
+  transform: translateY(3px);
+  transition: all .3s;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+.fig-cap{
+  
+  position: relative;
+  margin-top: -5rem;
+  font-family: 'Oregon LDO';
+  color: white;
+  text-align: center;
+  background-color: rgb(0,0,0,0.7);
+  padding-bottom: 1rem;
+}
+.fig-cap:hover{
+  transform: translateY(-10px);
+  transition: all .4s ;
+}
+.img-section{
+  display: flex;
+  justify-content: space-around;
+  text-align: justify;
+  position: relative;
+  width: 100%;
+}
+.img-1{
+  background-image: url(images/1-hot-sellers-drawing-table.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  width: 100%;
+}
+.img-1:hover{
+  background-image: url(images/1-hot-sellers-image-table.jpg);
+}
+@media screen and (max-width:991px){
+  .img-section{
+
+  }
+}
+.img-2{
+  background-image: url(images/2-hot-sellers-drawing-sofa.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  width: 100%;
+}
+.img-2:hover{
+  background-image: url(images/2-hot-sellers-image-sofa.jpg);
+}
+
+.img-3{
+  background-image: url(images/3-hot-sellers-drawing-sets.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  width: 100%;
+}
+.img-3:hover{
+  background-image: url(images/3-hot-sellers-image-sets.jpg);
+}
+
+.img-6{
+  background-image: url(images/6-hot-sellers-drawing-bed.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  width: 100%;
+}
+.img-6:hover{
+  background-image: url(images/6-hot-sellers-image-bed.jpg);
+}
+
+.img-4{
+  background-image: url(images/4-hot-sellers-drawing-chair.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  width: 100%;
+}
+.img-4:hover{
+  background-image: url(images/4-hot-sellers-image-chair.jpg);
+}
+
+.img-5{
+  background-image: url(images/5-hot-sellers-drawing-lamp.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  width: 100%;
+}
+
+
+.img-5:hover{
+  background-image: url(images/5-hot-sellers-image-lamp.jpg);
+}
+.heading-3{
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  font-size: 38px;
+  font-family: 'Oregon LDO';
+  color: black;
+}
+
+.heading-8{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    font-size: 38px;
+    font-family: 'Oregon LDO';
+    color: black;
+  
+}
+
+.img-11{
+  background-image: url(images/why-us-1-classic-to-contemporary.jpg);
+}
+
+.img-12{
+  background-image: url(images//why-us-2-custom-designs.jpg);
+}
+.img-13{
+  background-image: url(images//why-us-3-high-quality-furniture-at-affordable-prices.jpg);
+}
+.img-14{
+  background-image: url(images/why-us-4-socially-responsible-furniture-manufacturing.jpg);
+}
+.img-15{
+  background-image: url(images/why-us-5-furniture-shipping-and-delivery.jpg);
+}
+.img-16{
+  background-image: url(images/why-us-6-400-projects-completed.jpg);
+}
+.img-hover-zoom{
+  height: 200px;
+  overflow: hidden;
+}
+.img-hover-zoom img{
+  transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img{
+  transform: scale(0.8);
+}
+.section-testimonials{
+    
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.36),
+    rgba(255, 255, 255, 0.36)
+  ),
+  url(images/home-appointment.png);
+background-size: auto, cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height: 300px;
+text-align: left;
+background-position: 50% 0%;
+margin-top: 5rem;
+}
+
+@media screen and (max-width:768px){
+  .section-testimonials{
+    height: 361px;
+  }
+}
+.box-section{
+  display: grid;
+  justify-content: center;
+  padding-top: 3rem;
+}
+.text-box {
+  font-family: 'Oregon LDO';
+  color: #000000;
+  font-size: 26px;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  
+}
+
+.btn-box{
+  border-style: dotted;
+  border-color: black;
+  letter-spacing: 1.3px;
+  color: darkslategray;
+}
+
+.page-box{
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.page-heading{
+  display: grid;
+  justify-content: center;
+  font-size: 40px;
+  font-family: 'Oregon LDO';
+}
+.fab-fa-instagram{
+
+}
+
+@media screen and (max-width:758px){
+    .para{
+      display: none;
+    }
+    h3.heading{
+      font-size: 10px;
+    }
+    .carousel-captionn{
+      width: 190px;
+      height: 50px;
+      box-sizing: border-box;
+      left: -4rem;
+      padding-top: 0.5px;
+    }
+    h3.heading{
+        font-size: 12px;
+    }
+  }
+  @media screen and (max-width:411px){
+    
+    h3.heading{
+      font-size: 10px;
+    }
+    .carousel-captionn{
+      width: 190px;
+      height: 50px;
+      box-sizing: border-box;
+      left: -4rem;
+      padding-top: 0.5px;
+    }
+   
+  }
+  .carousel-indicators{
+      color: black;
+  }
+  .carousel{
+      top: 2rem;
+  }
+  .para{
+    font-size: 16px;
+  }
+  .btn{
+    background-color: rgb(134, 130, 125);
+  }
+  img{
+    width: 100%;
+  }
+
+  .heading-6{
+    font-size: px;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Oregon LDO';
+    color: black;
+    margin-left: 2rem;
+  }
+  .btn:hover{
+    background-color: white;
+  }
+  .heading{
+    font-size: 20px;
+    color:white;
+    line-height: 1.3;
+  }
+  .carousel-captionn{
+    position: absolute ;
+    font-size: 15px;
+    background-color: black;
+    opacity: 0.6;
+    max-width: 229px;
+    max-height: 174px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 17px auto;
+    color: white;
+    margin-left: 11rem;
+    margin-top: 21rem;
+  }
+.heading-p{
+    font-size: 25px;
+}
+
+
+.rounded-circle{
+    width: 20rem;
+}
+.img-4{
+    height: 170px;
+}
+.heading-4{
+    font-size: 42px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Oregon LDO';
+    margin-bottom: 6rem;
+}
+.heading-7{
+  font-family: 'Oregon LDO';
+    font-size: 42px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Oregon LDO';
+    color: grey;
+}
+.para-7{
+    font-size: 17px;
+    text-align: justify;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    line-height: 1.8;
+    font-family:'Oregon LDO';
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+}
+.col-xl-12{
+    
+    margin-bottom: 7rem;
+}
+.img-7{
+    height: 177px;
+    width: 181px;
+    padding: 1rem;
+}
+
+.footer-link{
+    color: black;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+.footer-link:hover{
+    color: #0d5a86;
+    text-decoration: none;
+}
+
+.bg{
+    background-color: #ededed;
+}
+
+.carousel-logo .carousel-control {
+  width: 4%;
+  background-image: none;
+}
+.carousel-logo .carousel-control.left {
+  background-image: none;
+  margin-left: 15px;
+}
+.carousel-logo .carousel-control.right {
+  margin-right: 15px;
+  background-image: none;
+}
+.carousel-logo .cloneditem-1,
+.carousel-logo .cloneditem-2,
+.carousel-logo .cloneditem-3,
+.carousel-logo .cloneditem-4,
+.carousel-logo .cloneditem-5 {
+  display: none;
+}
+@media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
+  .carousel-logo .carousel-inner > .item.active.right, .carousel-logo .carousel-inner > .item.next {
+    transform: translate3d(33.33333333%, 0, 0);
+    left: 0;
+  }
+  .carousel-logo .carousel-inner > .item.active.left,
+  .carousel-logo .carousel-inner > .item.prev {
+    transform: translate3d(-33.33333333%, 0, 0);
+    left: 0;
+  }
+  .carousel-logo .carousel-inner > .item.left,
+  .carousel-logo .carousel-inner > .item.prev.right,
+  .carousel-logo .carousel-inner > .item.active {
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+@media all and (min-width: 768px) {
+  .carousel-logo .carousel-inner > .active.left,
+  .carousel-logo .carousel-inner > .prev {
+    left: -33.33333333%;
+  }
+  .carousel-logo .carousel-inner > .active.right,
+  .carousel-logo .carousel-inner > .next {
+    left: 33.33333333%;
+  }
+  .carousel-logo .carousel-inner > .left,
+  .carousel-logo .carousel-inner > .prev.right,
+  .carousel-logo .carousel-inner > .active {
+    left: 0;
+  }
+  .carousel-logo .carousel-inner .cloneditem-1,
+  .carousel-logo .carousel-inner .cloneditem-2,
+  .carousel-logo .carousel-inner .cloneditem-3,
+  .carousel-logo .carousel-inner .cloneditem-4,
+  .carousel-logo .carousel-inner .cloneditem-5 {
+    display: block;
+  }
+}
+@media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {
+  .carousel-logo .carousel-inner > .item.active.right,
+  .carousel-logo .carousel-inner > .item.next {
+    transform: translate3d(16.66666667%, 0, 0);
+    left: 0;
+  }
+  .carousel-logo .carousel-inner > .item.active.left,
+  .carousel-logo .carousel-inner > .item.prev {
+    transform: translate3d(-16.66666667%, 0, 0);
+    left: 0;
+  }
+  .carousel-logo .carousel-inner > .item.left,
+  .carousel-logo .carousel-inner > .item.prev.right,
+  .carousel-logo .carousel-inner > .item.active {
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+@media all and (min-width: 992px) {
+  .carousel-logo .carousel-inner > .active.left,
+  .carousel-logo .carousel-inner > .prev {
+    left: -16.66666667%;
+  }
+  .carousel-logo .carousel-inner > .active.right,
+  .carousel-logo .carousel-inner > .next {
+    left: 16.66666667%;
+  }
+  .carousel-logo .carousel-inner > .left,
+  .carousel-logo .carousel-inner > .prev.right,
+  .carousel-logo .carousel-inner > .active {
+    left: 0;
+  }
+}
+

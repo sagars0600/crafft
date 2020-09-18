@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Montserrat:100,200,300,400,500,600,700,800,900|Montserrat:100,200,300,400,500,600,700,800,900|Muli:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <title>Crafts</title>
+</head>
+<body>
+  
+  
+   <div class="header fixed-top" style="box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);">
+    <div class="container"> 
+      <div class="logo">LOGO</div>
+        <nav>
+          
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li class="sub-menu"><a href="#">SERVICES</a>
+              <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                
+            </ul>
+            </li>
+            <li><a href="#">TEAM</a></li>
+            <li class="sub-menu"><a href="#">PORTFOLIO</a>
+              <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li class="dropdown-submenu">
+                  <a class="test" tabindex="-1" href="#">New <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">2</a></li>
+                    <li><a tabindex="-1" href="#">1</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">SIGNUP</a></li>
+          </ul>
+      
+        </nav>
+        
+          <div class="cart-icon">
+            
+            <i class="fa fa-shopping-bag " aria-hidden="true" title="Cart Items" onclick="open">
+            <span class="badge">2</span>
+            </i>
+          
+          </div>
+         
+        
+        <div class="menu-toggle" onclick="lockScroll()" type="button" data-toggle="collapse" style="color: black;"><i class="fa fa-list" aria-hidden="true" style="color: black;"></i></div>
+      </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i> </button>
+  
+
+    <div class="container " style="margin-top: 5.5rem;">
+    <div id="carouselExample1" class="carousel slide z-depth-1-half" data-ride="carousel">
+      <div class="carousel-inner"  style="height: 65vh;">
+      
+          <div class="carousel-item active" style="background-image: url(images/slider1.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; height: 94%;">
+
+          
+            <div class="carousel-captionn">
+              <h3 class="heading">RECLAIMED WOOD FURNITURE</h3>
+              <p class="para">Dinning Tables, Sideboard <br> Wardrobe, Chairs <br> Console, Side Tables</p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(images/slider2.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; height: 94%;">
+            <div class="carousel-captionn">
+              <h3 class="heading">CAST IRON FURNITURE</h3>
+              <p class="para">Crank Dinning Table <br> Pedestal Table, Outdoor Furniture <br> Bar Stool </p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(images/slider3.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; height: 94%;">
+            <div class="carousel-captionn">
+              <h3 class="heading">UPHOLDSTERY FURNITURE</h3>
+              <p class="para">Chesterfield Sofa <br> Industrial Sofa <br> <Button class="btn">Explore</Button> 
+            </p>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url(images/slider4.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; height: 94%;">
+            <div class="carousel-captionn">
+              <h3 class="heading">RECLAIMED WOOD FURNITURE</h3>
+              <p class="para">Dinning Tables, Sideboard <br> Wardrobe, Chairs <br> Console, Side Tables</p>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    
+    </div>
+    <div class="container" style="margin-top: 4rem; width: 62vw;">
+      <h1 class="heading-8">Featured Categories</h1>
+        <div class="img-grid">
+        <div>
+     
+         <img src="images/33d32843888729f03dd57208550f3946-247x247.jpg" alt="">
+          <a href="">
+           <figcaption class="fig-cap">Industrial Furniture <br>454 Products</figcaption> </a>
+          </div>
+    
+      <div>
+        <a href="#">
+        <img src="images//baumhaus_urban_chic_dining_table_6_chairs_IRF04B_1-1200x1200-1-300x300.jpg" alt="">
+        <figcaption class="fig-cap">Reclaimed Wood <br>211 Products</figcaption></a>
+      </div>
+
+      <div>
+        <a href="#">
+        <img src="images/dining-sets-03d1940e32032e44c82af0c827a2494a.webp" alt="">
+        <figcaption class="fig-cap">Upholdstery Furniture <br>119 Products</figcaption> </a>
+      </div>
+
+      <div>
+        <a href="#">
+        <img src="images/elegant-furniture-logo-with-lamp_23-2148477392.jpg" alt="">
+        <figcaption class="fig-cap">More Products <br>228 Products</figcaption></a>
+      </div>
+      
+    </div>
+  </div>
+  <section class="container">
+  <div class="section-3">
+      <h1 class="heading-3">Hot sellers</h1>
+      <div class="row d-none d-md-flex">
+        <div class=" col-xl-12  img-section" style="padding: 1rem;">
+          <div class="img-1">
+            <a href="#">
+            <img src="" alt="">
+            <figcaption style="font-family: 'Oregon LDO'; text-align: center; font-size: 28px; color: black; top: 14.5rem; position: relative;">Table</figcaption>
+            </a>
+          </div>
+          <div class="img-2">
+            <a href="#">
+            <img src="" alt="">
+            <figcaption style="font-family: 'Oregon LDO'; text-align: center; font-size: 28px; color: black; top: 14.5rem; position: relative;">Sofa</figcaption>
+            </a>
+          </div>
+          <div class="img-3">
+            <a href="#">
+            <img src="" alt="">
+            <figcaption style="font-family: 'Oregon LDO'; text-align: center; font-size: 28px; color: black; top: 14.5rem; position: relative;">Sets</figcaption>
+            </a>
+          </div>
+          <div class="img-4">
+            <a href="#">
+            <img src="" alt="">
+            <figcaption style="font-family: 'Oregon LDO'; text-align: center; font-size: 28px; color: black; top: 14.5rem; position: relative;">Chair</figcaption>
+            </a>
+          </div>
+          <div class="img-5">
+            <a href="#">
+            <img src="" alt="">
+            <figcaption style="font-family: 'Oregon LDO'; text-align: center; font-size: 28px; color: black; top: 14.5rem; position: relative;">Lamps</figcaption>
+            </a>
+          </div>
+          <div class="img-6">
+            <a href="#">
+            <img src="" alt="">
+            <figcaption style="font-family: 'Oregon LDO'; text-align: center; font-size: 28px; color: black; top: 14.5rem; position: relative;">Beds</figcaption>
+            </a>
+          </div>
+        </div>
+    </div>
+      <div class="row d-flex d-md-none" style="text-align: center;">
+          <div class="col-3">
+            <div class="img-1" style="width: 31vw; height: 27vh; ">
+        
+              <img src="" alt="">
+              <h5 class="heading-5">Table</h5>
+              <!-- <figcaption >Table</figcaption> -->
+              
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="img-2" style="width: 31vw; height: 27vh; margin-left: 1.6rem;">
+        
+              <img src="" alt="">
+              <h5 class="heading-5">Sofa</h5>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="img-3 " style="width: 31vw; height: 27vh; margin-left: 3.2rem;">
+        
+              <img src="" alt="">
+              <h5 class="heading-5">Sets</h5>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex d-md-none">
+          <div class="col-3">
+            <div class="img-4 "style="width: 31vw; height: 27vh;  ">
+        
+              <img src="" alt="">
+              <h5 class="heading-5">Chair</h5>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="img-5" style="width: 31vw; height: 27vh; margin-left: 1.6rem;">
+        
+              <img src="" alt="">
+              <h5 class="heading-5">Lamps</h5>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="img-6" style="width: 31vw; height: 27vh; margin-left: 3.2rem;">
+          
+              <img src="" alt="">
+              <h5 class="heading-5">Beds</h5>
+            </div>
+          </div>
+        </div>
+    </div>    
+  </div>
+  </section>
+<div class="container" style="max-width: 78%;">
+  <h1 class="heading-3">OUR VALUED CLIENTELE</h1>
+<div class="carousel carousel-logo slide" id="carousel-logo">
+  <div class="carousel-inner ">
+    <div class="item active">
+    <div class="col-xs-12 col-sm-4 col-md-2">
+      <img src="/images/Aviva-make-friends.jpg" class="img-responsive">
+    </div>
+    </div>
+    <div class="item">
+    <div class="col-xs-12 col-sm-4 col-md-2">
+      <img src="/images/Brown-Sugar.jpg" class="img-responsive">
+    </div>
+    </div>
+    <div class="item">
+    <div class="col-xs-12 col-sm-4 col-md-2">
+      <img src="images//Burgerman.jpg" class="img-responsive">
+    </div>
+    </div>
+    <div class="item">
+    <div class="col-xs-12 col-sm-4 col-md-2">
+      <img src="images/Coffee-Culture.jpg" class="img-responsive">
+    </div>
+    </div>
+    <div class="item">
+    <div class="col-xs-12 col-sm-4 col-md-2">
+      <img src="/images/Ice-Cream-Works.png" class="img-responsive">
+    </div>
+    </div>
+    <div class="item">
+    <div class="col-xs-12 col-sm-4 col-md-2">
+      <img src="images/Keventers.jpg" class="img-responsive">
+    </div>
+    </div>
+    <div class="item">
+    <div class="col-xs-12 col-sm-4 col-md-2">
+      <img src="images/pwc.png" class="img-responsive">
+    </div>
+    </div>
+    <div class="item">
+      <div class="col-xs-12 col-sm-4 col-md-2">
+        <img src="images/Sotally-Tober.jpg" height="150" width="150" class="img-responsive">
+      </div>
+      </div>
+      <div class="item">
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <img src="images/TD-Since-1959.png" class="img-responsive">
+        </div>
+        </div>
+        <div class="item">
+          <div class="col-xs-12 col-sm-4 col-md-2">
+            <img src="images/Tea-Trails.jpg" class="img-responsive">
+          </div>
+          </div>
+    <div class="item">
+    <div class="col-xs-12 col-sm-4 col-md-2">
+      <img src="images/The-Chocolate-House.png" class="img-responsive">
+    </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#carousel-logo" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+  <a class="right carousel-control" href="#carousel-logo" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+</div>
+</div>
+
+<section class="container">
+  <div class="section-3">
+      <h1 class="heading-3">Why US?</h1>
+      <p class="para-7">ESTABLISHED IN 2015, KERNIG KRAFTS HAS SUCCESSFULLY COMPLETED 500+ PROJECTS AND MORE ARE BEING CRAFTED TO PERFECTION BY OUR EXPERIENCED CRAFTSMEN IN OUR STATE OF THE ART FURNITURE MANUFACTURING FACILITY.</p>
+      <div class="row d-none d-md-flex">
+        <div class=" col-xl-12  img-section" style="padding: 1rem;">
+          <div class="img-hover-zoom ">
+            <a href="">
+            <img src="images//why-us-1-classic-to-contemporary.jpg" alt="" style="width: 95%;">
+            <figcaption style="font-family: 'Oregon LDO'; text-align: center; font-size: 25px; color: black; top: -5px; position: relative;">Table</figcaption>
+            <!-- <h5 class="heading-5">Styles.</h5> -->
+          </a>
+           
+          </div>
+          <div class="img-hover-zoom ">
+            <a href="">
+            <img src="images/why-us-2-custom-designs.jpg" alt="" style="width: 95%;">
+            <figcaption style="font-family: 'Oregon LDO'; text-align: center; font-size: 25px; color: black; top: -5px; position: relative;">Customize</figcaption>
+          </a>
+           
+          </div>
+          <div class="img-hover-zoom">
+            <a href="">
+            <img src="images//why-us-3-high-quality-furniture-at-affordable-prices.jpg" alt="" style="width: 95%;">
+            <figcaption style="font-family: 'Oregon LDO'; text-align: center; font-size: 25px; color: black; top: -5px; position: relative;">Affordable</figcaption>
+          </a>
+           
+          </div>
+          <div class="img-hover-zoom">
+            <a href="">
+            <img src="images/why-us-4-socially-responsible-furniture-manufacturing.jpg" alt="" style="width: 95%;">
+            <figcaption style="font-family: 'Oregon LDO'; text-align: center; font-size: 25px; color: black; top: -5px; position: relative;">Ethical</figcaption>
+          </a>
+            
+          </div>
+          <div class="img-hover-zoom">
+            <a href="">
+            <img src="images/why-us-5-furniture-shipping-and-delivery.jpg" alt="" style="width: 95%;">
+            <figcaption style="font-family: 'Oregon LDO'; text-align: center; font-size: 25px; color: black; top: -5px; position: relative;">Doorstep</figcaption>
+          </a>
+           
+          </div>
+          <div class="img-hover-zoom">
+            <a href="">
+            <img src="images/why-us-6-400-projects-completed.jpg" alt="" style="width: 95%;">
+            <figcaption style="font-family: 'Oregon LDO'; text-align: center; font-size: 25px; color: crimson; top: -5px; position: relative;">500+</figcaption>
+          </a>
+            
+          </div>
+        </div>
+      </div>
+
+        <div class="row d-flex d-md-none" style="text-align: center;">
+          <div class="col-s-1">
+            <div class="img-s img-hover-zoom ">
+              <a href="">
+              <img src="images/why-us-1-classic-to-contemporary.jpg" style=" margin-left: .5rem;" alt="Classic">
+              <h5 class="heading-01">Styles</h5>
+            </a>
+             
+              
+            </div>
+          </div>
+          <div class="col-s-1">
+            <div class="img-s img-hover-zoom ">
+              <a href="">
+              <img src="images//why-us-2-custom-designs.jpg"   alt="Customize">
+              <h5 class="heading-01">Customize</h5>
+            </a>
+            </div>
+          </div>
+          <div class="col-s-1">
+            <div class="img-s img-hover-zoom ">
+              <a href="">
+              <img src="images/why-us-3-high-quality-furniture-at-affordable-prices.jpg"   alt="Affordable">
+              <h5 class="heading-01">Affordable</h5>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex d-md-none">
+          <div class="col-s-1">
+            <div class="img-s img-hover-zoom ">
+              <a href="#">
+              <img src="images/why-us-4-socially-responsible-furniture-manufacturing.jpg" style="margin-left: .5rem;" alt="Ethical">
+              <h5 class="heading-01">Ethical</h5>
+              </a>
+            </div>
+          </div>
+          <div class="col-s-1">
+            <div class="img-s img-hover-zoom ">
+              <a href="">
+              <img src="images/why-us-5-furniture-shipping-and-delivery.jpg"  alt="Doorstep">
+              <h5 class="heading-01">Doorstep.</h5>
+            </a>
+            </div>
+          </div>
+          <div class="col-s-1">
+            <div class="img-s img-hover-zoom ">
+              <a href="">
+              <img src="images/why-us-6-400-projects-completed.jpg"   alt="Projects 500+">
+              <h5 class="heading-01">500+</h5>
+            </a>  
+            </div>
+          </div>
+        </div>
+    </div>    
+  </div>
+</section>
+
+
+<section class="section-testimonials">
+  <div class="box-section">
+  <div class="row">
+    <h2 class="text-box">View our collection<br />in person, at our<br />outlet in Jodhpur </h2> 
+</div>
+<a href="#"
+    class="btn-box"
+    >BOOK AN APPOINTMENT</a>
+  </div>
+</section>
+
+<!-- carousel 2 -->
+  <div class="container">
+  <section class="p-5 customers">
+    <div class="container-fluid">
+     <!--title-->
+     <div class="row text-dark text-center">
+      <div class="col m-4">
+        <h1 class="display-4 mb-4">Client Reviews</h1>
+        <div class="underline-dark mb-4"></div>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem asperiores maxime ex, amet cumque laudantium.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mx-auto">
+        <div class="carousel slide" data-ride="carousel" id="customer-carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#customer-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#customer-carousel" data-slide-to="1"></li>
+            <li data-target="#customer-carousel" data-slide-to="2"></li>
+            <li data-target="#customer-carousel" data-slide-to="3"></li>
+            <li data-target="#customer-carousel" data-slide-to="4"></li>
+            <li data-target="#customer-carousel" data-slide-to="5"></li>
+            <li data-target="#customer-carousel" data-slide-to="6"></li>
+            
+          </ol>  
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center">
+                <img src="images/Ms.-Gyan.jpg" class="img-fluid rounded-circle " width="160" height="50%" >
+                <blockquote class="blockquote text-dark">
+                  <p class="mb-5">"I visit their factory every few months to buy furniture for my store. They are so updated with trends. They have lovely décor items as well!"</p>
+                </blockquote>
+                <a href="">
+                <h5 class="text-uppercase text-dark font-weight-bold mb-3 heading-p">Gyanjyoti Bhutoria</h5>
+              </a>
+              </div>
+              
+
+              <div class="carousel-item text-center">
+                <img src="images/Mr.-Vishal-Jalan.jpg" class="img-fluid rounded-circle " width="160" >
+                <blockquote class="blockquote text-dark">
+                  <p class="mb-5"> Brown Sugar, Jaipur. "They have added grace to my brand.
+                    Brown Sugar is known for good ambiance and cake, a part
+                    of which is brought by Kernig Krafts."</p>
+                </blockquote>
+                <a href=""></a>
+                <h5 class="text-uppercase text-dark font-weight-bold mb-3">Vishal Jalani</h5>
+                
+              </div>
+
+              <div class="carousel-item  text-center">
+                <img src="images/Mr.-Ayush.jpg" class="img-fluid rounded-circle " width="160" >
+                <blockquote class="blockquote text-dark">
+                  <p class="mb-5">Partner, AADP Studio. "What I like about working with
+                    them is that they update you from starting to the end.
+                    They have a good understanding of space and design and
+                    that makes it easy to communicate with them."</p>
+                </blockquote>
+                <a href="#">
+                <h5 class="text-uppercase text-dark font-weight-bold mb-3">Ayush Bharadwaj</h5>
+              </a>
+              </div>
+              <div class="carousel-item  text-center">
+                <img src="images/Ms.-Julia-Mantrova.jpg" class="img-fluid rounded-circle " width="160" >
+                <blockquote class="blockquote text-dark">
+                  <p class="mb-5"> Amsterdam. "Visited their facility, they have very huge
+                    collection. Was happy to know that they do bespoke
+                    furniture."</p>
+                </blockquote>
+                <a href="#">
+                <h5 class="text-uppercase text-dark font-weight-bold mb-3">Julia Mantrova</h5>
+              </a>
+              </div>
+              <div class="carousel-item  text-center">
+                <img src="images/Mr.-Enayat-Safi.jpg" class="img-fluid rounded-circle " width="160" >
+                <blockquote class="blockquote text-dark">
+                  <p class="mb-5">Restaurant Owner, Denmark. "My love for gastronomy and
+                    their love for making furniture helped me in making my
+                    ﬁrst restaurant, a dhaba themed place in Copenhagen,
+                    Denmark. The customised furniture items they made,
+                    turned out exactly how I visualised them."</p>
+                </blockquote>
+                <a href="#">
+                <h5 class="text-uppercase text-dark font-weight-bold mb-3">Enayat Safi</h5>
+              </a>
+              </div>
+
+              <div class="carousel-item  text-center">
+                <img src="images/Mr.-Bhring-Raj.jpg" class="img-fluid rounded-circle " width="160" >
+                <blockquote class="blockquote text-dark">
+                  <p class="mb-5"> Architect. "I go to them repeatedly for my projects. My
+                    work often demands the need for customisation. And I
+                    only trust them because they know their craft well."</p>
+                </blockquote>
+                <a href="#"></a>
+                <h5 class="text-uppercase text-dark font-weight-bold mb-3">Bhringraj Hazarika</h5>
+              </a>
+              </div>
+              
+              <div class="carousel-item  text-center">
+                <img src="images/Mr.-Preetham-Puneeth.jpeg" class="img-fluid rounded-circle " width="160" >
+                <blockquote class="blockquote text-dark">
+                  <p class="mb-5">Kanadda Film Actor. "Kernig Krafts is house of
+                    innovation and result of passion for work and
+                    commitment. They understand requirement of customer and
+                    deliver precisely."</p>
+                </blockquote>
+                <a href="#">
+                <h5 class="text-uppercase text-dark font-weight-bold mb-3">Preetham Puneeth</h5>
+              </a>
+              </div>
+
+            </div>
+         
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  </div>
+
+    <section class="page-box" >
+      <div>
+        <h4 class="page-heading">
+          Instagram
+        </h4>
+      </div>
+      <a href="#">
+        <i class="fab fa-instagram " style="font-size: 46px; display: grid; justify-content: center; margin-top: 35px; color: crimson;"></i>
+      </a>
+      
+    </section>
+    <!-- footer -->
+    <footer class="bg-grey" style="background-color:#ededed;">
+        <div class=" container container-fluid" style="background-color: #ededed;">
+          <div class="row text-dark " style="font-family: 'Oregon LDO'; margin-top: 35px;" >
+            <div class="col-lg-4 col-sm-6">
+              <h5 class="pb-3 ">About Us</h5>
+              <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iste ratione quae.</p>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <h5 class="pb-3">Visit Us</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="footer-link ">Home</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link ">Mission</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link ">Collection</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link ">Gallery</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link ">Customers</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link ">Pricing</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link ">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <h5 class="pb-3">Need Help?</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="footer-link text-uppercase  text-dark">Customer Service</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link text-uppercase text-dark">Online Chat</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="footer-link text-uppercase text-dark">Support</a>
+                </li>
+    
+                <li>
+                  <a href="#" class="text-info">info@wonsoft.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <h5 class="pb-3">Stay Connected</h5>
+              <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab repellendus id fugiat?</p>
+              <form class="mb-3">
+                <div class="input-group">
+                  <input type="text"required class="form-control" placeholder="Email Address" >
+                  <div class="input-group-append">
+                    <button type="submit"  class="btn bg-danger text-uppercase text-white font-weight-bold">Sign Up</button>
+                  </div>
+                </div>
+              </form>
+              <ul class="list-inline mt-3">
+                <li class="list-inline-item"> <a href="#"> <i class="fab fa-facebook fa-2x text-primary"></i></li> </a>
+                <li class="list-inline-item"> <a href="#"><i class="fab fa-google-plus fa-2x text-warning"></i></li>  </a>
+                <li class="list-inline-item"> <a href="#"><i class="fab fa-instagram fa-2x text-muted"></i></li>  </a>
+                <li class="list-inline-item"> <a href="#"><i class="fab fa-youtube fa-2x text-danger"></i></li>  </a>
+                <li class="list-inline-item"> <a href="#"><i class="fab fa-whatsapp fa-2x text-success"></i></li>  </a>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center text-dark border-top pt-3">
+              <p class="text-dark"> &copy; 2020 Copyright , All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+      <script src="script.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+     
+      </a>
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</body>
+</html>
